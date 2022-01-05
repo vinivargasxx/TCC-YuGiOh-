@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Nespresso APP</string>
+
+    <string name="txt_cards_title">Cards</string>
+    <string name="txt_coffees_subtitle">Cremosos, espumosos, hmm</string>
+
+    <string name="txt_products">Produtos</string>
+    <string name="txt_favorites">Favoritos</string>
+
+    <string name="txt_error_title">Opss, algo deu errado</string>
+    <string name="txt_error_subtitle">Tente novamente mais tarde</string>
+
+</resources>
