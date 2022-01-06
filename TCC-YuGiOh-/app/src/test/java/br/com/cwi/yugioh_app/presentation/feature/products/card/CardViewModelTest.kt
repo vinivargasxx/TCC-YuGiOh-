@@ -98,7 +98,7 @@ class CardViewModelTest {
         coEvery { cardLocalRepository.getAll() } returns emptyList()
 
         // Act
-        viewModel.fetchCoffees()
+        viewModel.fetchCards()
 
         // Assert
         verify { cardLocalRepository.getAll() }

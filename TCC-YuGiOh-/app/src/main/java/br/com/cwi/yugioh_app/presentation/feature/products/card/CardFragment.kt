@@ -36,7 +36,7 @@ class CardFragment : Fragment() {
         viewModel.cards.observe(viewLifecycleOwner) { list ->
             setUpCoffeeRecyclerView(list)
         }
-        viewModel.fetchCoffees()
+        viewModel.fetchCards()
     }
 
     private fun setUpCoffeeRecyclerView(list: List<Card>) {
@@ -56,7 +56,7 @@ class CardFragment : Fragment() {
         findNavController().navigate(
             R.id.cardDetailFragment,
             bundleOf(
-                Pair(EXTRA_COFFEE_ID, id)
+                Pair(EXTRA_CARD_ID, id)
             )
         )
     }

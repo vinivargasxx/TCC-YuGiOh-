@@ -16,7 +16,7 @@ class CardViewModel(
     private val _cards = MutableLiveData<List<Card>>()
     val cards: LiveData<List<Card>> = _cards
 
-    fun fetchCoffees() {
+    fun fetchCards() {
         launch {
             val cardList = cardRepository.getCards()
             _cards.postValue(cardList)
@@ -30,9 +30,9 @@ class CardViewModel(
     }
 
     fun setFavorite(card: Card) {
-        val coffeeEntity = card.toEntity()
-        if (card.isDeck) cardLocalRepository.add(coffeeEntity)
-        else cardLocalRepository.remove(coffeeEntity)
+        val cardEntity = card.toEntity()
+        if (card.isDeck) cardLocalRepository.add(cardEntity)
+        else cardLocalRepository.remove(cardEntity)
     }
 
 }

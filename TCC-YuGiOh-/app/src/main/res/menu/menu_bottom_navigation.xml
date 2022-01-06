@@ -6,7 +6,7 @@
         android:icon="@drawable/ic_products"
         android:title="@string/txt_products"/>
     <item
-        android:id="@+id/favorites_menu"
+        android:id="@+id/deck_menu"
         android:enabled="true"
         android:icon="@drawable/ic_favorite"
         android:title="@string/txt_favorites"/>

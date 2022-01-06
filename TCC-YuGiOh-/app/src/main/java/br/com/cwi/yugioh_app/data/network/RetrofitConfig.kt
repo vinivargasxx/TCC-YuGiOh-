@@ -7,7 +7,7 @@ import retrofit2.converter.moshi.MoshiConverterFactory
 
 object RetrofitConfig {
 
-    val service: NespressoApi = Retrofit.Builder()
+    val SERVICE: YugiohApi = Retrofit.Builder()
         .baseUrl("https://db.ygoprodeck.com/api/v7/cardinfo.php")
         .addConverterFactory(
             MoshiConverterFactory.create(
@@ -17,5 +17,5 @@ object RetrofitConfig {
             )
         )
         .build()
-        .create(NespressoApi::class.java)
+        .create(YugiohApi::class.java)
 }

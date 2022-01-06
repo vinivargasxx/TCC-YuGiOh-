@@ -32,7 +32,7 @@ class CardViewHolder(
         }
 
         Glide.with(itemView.context)
-            .load(item.urlImage)
+            .load(item.images[0].urlImage)
             .into(ivImage)
 
         itemView.setOnClickListener {

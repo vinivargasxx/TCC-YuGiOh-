@@ -4,7 +4,7 @@ import br.com.cwi.yugioh_app.data.database.entity.CardEntity
 import br.com.cwi.yugioh_app.domain.entity.Card
 
 fun CardEntity.toCard() = Card (
-    id, name, type, description, images
+    id, name, type, images, description
 )
 
 fun Card.toEntity() = CardEntity (

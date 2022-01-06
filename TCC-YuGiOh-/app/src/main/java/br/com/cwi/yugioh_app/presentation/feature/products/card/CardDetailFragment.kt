@@ -7,14 +7,14 @@ import android.view.View
 import android.view.ViewGroup
 import br.com.cwi.yugioh_app.databinding.FragmentCardDetailBinding
 
-const val EXTRA_COFFEE_ID = "EXTRA_COFFEE_ID"
+const val EXTRA_CARD_ID = "EXTRA_CARD_ID"
 
 class CardDetailFragment : Fragment() {
 
     private lateinit var binding: FragmentCardDetailBinding
 
-    private val coffeeId by lazy {
-        arguments?.getInt(EXTRA_COFFEE_ID)
+    private val cardId by lazy {
+        arguments?.getInt(EXTRA_CARD_ID)
     }
 
     override fun onCreateView(
@@ -27,7 +27,7 @@ class CardDetailFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.tvBatata.text = coffeeId.toString()
+        binding.tvBatata.text = cardId.toString()
     }
 
 }

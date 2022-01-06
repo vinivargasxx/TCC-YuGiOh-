@@ -32,7 +32,7 @@ abstract class BaseBottomNavigation : AppCompatActivity() {
                     val intent = Intent(this, ProductsActivity::class.java)
                     startActivity(intent)
                 }
-                R.id.favorites_menu -> {
+                R.id.deck_menu -> {
                     val intent = Intent(this, DeckActivity::class.java)
                     startActivity(intent)
                 }

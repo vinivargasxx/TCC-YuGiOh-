@@ -10,7 +10,7 @@ class DeckActivity : BaseBottomNavigation() {
 
     private lateinit var binding : ActivityDeckBinding
 
-    override val currentTab: Int = R.id.favorites_menu
+    override val currentTab: Int = R.id.deck_menu
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
