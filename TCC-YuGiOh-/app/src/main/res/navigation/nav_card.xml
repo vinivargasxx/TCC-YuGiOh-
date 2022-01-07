@@ -2,22 +2,22 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nav_coffee"
-    app:startDestination="@id/coffeeFragment">
+    android:id="@+id/nav_card"
+    app:startDestination="@id/cardFragment">
 
     <fragment
-        android:id="@+id/coffeeFragment"
+        android:id="@+id/cardFragment"
         android:name="br.com.cwi.yugioh_app.presentation.feature.products.card.CardFragment"
-        android:label="fragment_coffee"
+        android:label="fragment_card"
         tools:layout="@layout/fragment_card" >
         <action
-            android:id="@+id/action_coffeeFragment_to_coffeeDetailFragment"
+            android:id="@+id/action_cardFragment_to_cardDetailFragment"
             app:destination="@id/cardDetailFragment" />
     </fragment>
     <fragment
         android:id="@+id/cardDetailFragment"
-        android:name="br.com.cwi.yugioh_app.CoffeeDetailFragment"
-        android:label="fragment_coffee_detail"
+        android:name="br.com.cwi.yugioh_app.presentation.feature.products.card.CardDetailFragment"
+        android:label="fragment_card_detail"
         tools:layout="@layout/fragment_card_detail" />
 
 </navigation>

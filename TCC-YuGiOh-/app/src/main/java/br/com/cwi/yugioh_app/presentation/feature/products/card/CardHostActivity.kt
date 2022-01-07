@@ -41,7 +41,7 @@ class CardHostActivity : BaseBottomNavigation() {
     private fun setupNavController() {
         navController.addOnDestinationChangedListener { _, destination, _ ->
             val title = when (destination.id) {
-                R.id.coffeeFragment -> getString(R.string.txt_cards_title)
+                R.id.cardFragment -> getString(R.string.txt_cards_title)
                 else -> "Detalhes"
             }
             supportActionBar?.title = title
@@ -50,11 +50,11 @@ class CardHostActivity : BaseBottomNavigation() {
 
     private fun setupViewModel() {
         viewModel.loading.observe(this) { isLoading ->
-            binding.vpCoffee.displayedChild = if (isLoading) VIEW_LOADING else VIEW_CONTENT
+            binding.vpCard.displayedChild = if (isLoading) VIEW_LOADING else VIEW_CONTENT
         }
 
         viewModel.error.observe(this) { hasError ->
-            binding.vpCoffee.displayedChild = if (hasError) VIEW_ERROR else VIEW_CONTENT
+            binding.vpCard.displayedChild = if (hasError) VIEW_ERROR else VIEW_CONTENT
         }
     }
 

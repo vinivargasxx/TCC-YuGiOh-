@@ -8,7 +8,7 @@ import retrofit2.converter.moshi.MoshiConverterFactory
 object RetrofitConfig {
 
     val SERVICE: YugiohApi = Retrofit.Builder()
-        .baseUrl("https://db.ygoprodeck.com/api/v7/cardinfo.php")
+        .baseUrl("https://db.ygoprodeck.com/api/v7/cardinfo.php/")
         .addConverterFactory(
             MoshiConverterFactory.create(
                 Moshi.Builder()

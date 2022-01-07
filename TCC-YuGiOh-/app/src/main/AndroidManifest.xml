@@ -19,11 +19,6 @@
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="br.com.cwi.yugioh_app.presentation.feature.products.card.CardHostActivity"
-            android:exported="false"
-            android:label="@string/txt_cards_title"
-            android:screenOrientation="portrait" />
-        <activity
             android:name="br.com.cwi.yugioh_app.presentation.feature.products.ProductsActivity"
             android:exported="true"
             android:screenOrientation="portrait"
@@ -33,6 +28,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="br.com.cwi.yugioh_app.presentation.feature.products.card.CardHostActivity"
+            android:exported="false"
+            android:label="@string/txt_cards_title"
+            android:screenOrientation="portrait" />
+
     </application>
 
 </manifest>

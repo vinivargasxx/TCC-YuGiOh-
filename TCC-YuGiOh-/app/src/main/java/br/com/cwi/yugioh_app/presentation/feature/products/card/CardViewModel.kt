@@ -29,7 +29,7 @@ class CardViewModel(
         }
     }
 
-    fun setFavorite(card: Card) {
+    fun setDeck(card: Card) {
         val cardEntity = card.toEntity()
         if (card.isDeck) cardLocalRepository.add(cardEntity)
         else cardLocalRepository.remove(cardEntity)

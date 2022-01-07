@@ -45,7 +45,7 @@ class CardFragment : Fragment() {
                 DividerItemDecoration(context, DividerItemDecoration.VERTICAL)
             )
             adapter = CardAdapter(list, onDeckClick = {
-                viewModel.setFavorite(it)
+                viewModel.setDeck(it)
             }, onCardClick = {
                 navigateToCoffeeDetail(it.id)
             })
