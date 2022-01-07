@@ -4,7 +4,8 @@ class Card(
         var id: Int,
         var name: String,
         var type: String,
-        var images: List<CardImages>,
+        var cardImage: String,
+        var cardSmallImage: String,
         var description: String,
         var isDeck: Boolean = false
 )

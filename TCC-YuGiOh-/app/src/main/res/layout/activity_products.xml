@@ -7,16 +7,17 @@
     tools:context=".presentation.feature.products.ProductsActivity">
 
     <br.com.cwi.yugioh_app.presentation.component.ProductComponent
-        android:id="@+id/content_coffees"
+        android:id="@+id/content_cards"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:component_product_background_color="@color/coffees_color"
-        app:component_product_image="@drawable/coffees"
-        app:component_product_subtitle="@string/txt_coffees_subtitle"
+        app:component_product_background_color="@color/cards_color"
+        app:component_product_image="@drawable/yugioh"
+        app:component_product_subtitle="@string/txt_cards_subtitle"
         app:component_product_title="@string/txt_cards_title"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/content_bottom_navigation"/>
 
     <include
         android:id="@+id/content_bottom_navigation"

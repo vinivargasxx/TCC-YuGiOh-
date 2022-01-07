@@ -6,6 +6,6 @@ import retrofit2.http.GET
 interface YugiohApi {
 
     @GET
-    suspend fun getCards(): List<DataResponse>
+    suspend fun getCards(): DataResponse
 
 }

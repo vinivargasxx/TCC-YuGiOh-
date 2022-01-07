@@ -6,7 +6,7 @@ import br.com.cwi.yugioh_app.domain.entity.Data
 class DataMapper: DomainMapper<DataResponse, Data> {
 
     override fun toDomain(from: DataResponse) = Data(
-        products = CardMapper().toDomain(from.cards)
+        cards = CardMapper().toDomain(from.cards)
     )
 
     override fun toDomain(from: List<DataResponse>) = from.map {

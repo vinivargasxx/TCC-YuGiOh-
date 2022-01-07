@@ -8,7 +8,7 @@
         android:id="@+id/iv_error"
         android:layout_width="wrap_content"
         android:layout_height="165dp"
-        app:srcCompat="@drawable/error_coffee"
+        app:srcCompat="@drawable/error"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintVertical_chainStyle="packed"
         app:layout_constraintEnd_toEndOf="parent"

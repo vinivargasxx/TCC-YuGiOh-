@@ -27,7 +27,7 @@ class CardDetailFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.tvBatata.text = cardId.toString()
+        binding.tvCards.text = cardId.toString()
     }
 
 }

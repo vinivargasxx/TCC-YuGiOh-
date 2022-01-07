@@ -26,7 +26,7 @@
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/tv_product_title"
-        tools:text="@string/txt_coffees_subtitle" />
+        tools:text="@string/txt_cards_subtitle" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/iv_product_image"
@@ -36,6 +36,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/coffees" />
+        tools:srcCompat="@drawable/initialImage" />
 
 </merge>

@@ -9,5 +9,5 @@
         android:id="@+id/deck_menu"
         android:enabled="true"
         android:icon="@drawable/ic_favorite"
-        android:title="@string/txt_favorites"/>
+        android:title="@string/txt_deck"/>
 </menu>

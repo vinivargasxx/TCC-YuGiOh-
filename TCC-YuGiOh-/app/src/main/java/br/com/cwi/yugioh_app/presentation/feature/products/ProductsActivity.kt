@@ -25,8 +25,8 @@ class ProductsActivity : BaseBottomNavigation() {
     override fun getBottomNavigation(): BottomNavigationView = binding.contentBottomNavigation.root
 
     private fun setUpProductActions() {
-        binding.contentCoffees.title = "Batata"
-        binding.contentCoffees.setOnClickListener {
+        binding.contentCards.title = "Cards"
+        binding.contentCards.setOnClickListener {
             val intent = Intent(this, CardHostActivity::class.java)
             startActivity(intent)
         }

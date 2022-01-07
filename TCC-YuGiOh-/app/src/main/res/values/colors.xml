@@ -9,9 +9,7 @@
     <color name="white">#FFFFFFFF</color>
 
     <!-- Home -->
-    <color name="coffees_color">#EDDEA5</color>
-    <color name="machines_color">#DCB889</color>
-    <color name="accessories_color">#F2E3C6</color>
+    <color name="cards_color">#B8A5ED</color>
     <color name="gray_light">#f3f3f3</color>
     <color name="gray_darker">#444</color>
     <color name="gray_dark">#666</color>

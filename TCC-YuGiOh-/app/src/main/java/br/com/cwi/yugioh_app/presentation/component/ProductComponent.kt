@@ -34,7 +34,7 @@ class ProductComponent : ConstraintLayout {
                 setBackgroundColor(
                     getColor(
                         R.styleable.ProductComponent_component_product_background_color,
-                        ContextCompat.getColor(context, R.color.coffees_color)
+                        ContextCompat.getColor(context, R.color.cards_color)
                     )
                 )
             }

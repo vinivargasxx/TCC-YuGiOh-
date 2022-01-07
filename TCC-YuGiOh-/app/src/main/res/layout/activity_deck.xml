@@ -9,7 +9,7 @@
     <androidx.appcompat.widget.AppCompatTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/txt_favorites"
+        android:text="@string/txt_deck"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/content_bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"

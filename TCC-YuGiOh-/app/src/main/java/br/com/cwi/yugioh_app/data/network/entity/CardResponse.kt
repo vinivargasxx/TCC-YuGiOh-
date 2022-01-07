@@ -7,5 +7,5 @@ class CardResponse(
     @Json(name = "name") val name: String,
     @Json(name = "type") val type: String,
     @Json(name = "desc") val description: String,
-    @Json(name = "card_images") val images: List<CardImagesResponse>,
+    @Json(name = "card_images") val cardImages: List<CardImagesResponse>,
 )

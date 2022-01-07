@@ -4,5 +4,5 @@ import br.com.cwi.yugioh_app.domain.entity.Card
 import br.com.cwi.yugioh_app.domain.entity.Data
 
 interface CardRepository {
-    suspend fun getCards(): List<Card>
+    suspend fun getCards(): Data
 }

@@ -10,7 +10,8 @@ class CardMapper: DomainMapper<CardResponse, Card> {
         name = from.name,
         description = from.description,
         type = from.type,
-        images = CardImagesMapper().toDomain(from.images)
+        cardSmallImage = from.cardImages[0].urlSmallImage,
+        cardImage = from.cardImages[0].urlImage
     )
 
 

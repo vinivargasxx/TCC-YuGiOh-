@@ -2,6 +2,7 @@ package br.com.cwi.yugioh_app.di
 
 import br.com.cwi.yugioh_app.data.database.AppDatabase
 import br.com.cwi.yugioh_app.data.network.RetrofitConfig
+import br.com.cwi.yugioh_app.data.network.mapper.CardImagesMapper
 import br.com.cwi.yugioh_app.data.network.mapper.CardMapper
 import br.com.cwi.yugioh_app.data.network.mapper.DataMapper
 import br.com.cwi.yugioh_app.data.repository.CardLocalRepositoryImpl
@@ -17,6 +18,7 @@ val dataModule = module {
 
     single { DataMapper() }
     single { CardMapper() }
+    single { CardImagesMapper() }
     single { AppDatabase.create(androidApplication()) }
 
     factory<CardRepository> { CardRepositoryImpl(get(), get()) }

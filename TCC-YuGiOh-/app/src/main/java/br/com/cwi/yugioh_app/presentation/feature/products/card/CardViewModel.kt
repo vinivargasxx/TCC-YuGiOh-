@@ -19,12 +19,12 @@ class CardViewModel(
     fun fetchCards() {
         launch {
             val cardList = cardRepository.getCards()
-            _cards.postValue(cardList)
+            _cards.postValue(cardList.cards)
         }
     }
 
-    private fun setIsCoffeeFavorite(favoriteIdList: List<Int>, cardList: List<Card>) {
-        favoriteIdList.forEach { id ->
+    private fun setIsCardDeck(deckIdList: List<Int>, cardList: List<Card>) {
+        deckIdList.forEach { id ->
             cardList.forEach { it.isDeck = it.id == id }
         }
     }
