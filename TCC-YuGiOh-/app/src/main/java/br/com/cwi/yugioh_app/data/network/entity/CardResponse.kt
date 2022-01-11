@@ -2,7 +2,7 @@ package br.com.cwi.yugioh_app.data.network.entity
 
 import com.squareup.moshi.Json
 
-class CardResponse(
+data class CardResponse(
     @Json(name = "id") val id: Int,
     @Json(name = "name") val name: String,
     @Json(name = "type") val type: String,

@@ -2,10 +2,10 @@
     <string name="app_name">YuGiOh! APP</string>
 
     <string name="txt_cards_title">Cards</string>
-    <string name="txt_cards_subtitle">Monte o seu deck!</string>
+    <string name="txt_cards_subtitle">Selecione suas cartas \n e monte um deck!</string>
 
-    <string name="txt_products">Produtos</string>
-    <string name="txt_deck">Seu deck atual!</string>
+    <string name="txt_inicio">Início</string>
+    <string name="txt_deck">Deck</string>
 
     <string name="txt_error_title">Opss, algo deu errado</string>
     <string name="txt_error_subtitle">Tente novamente mais tarde</string>

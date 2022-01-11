@@ -18,7 +18,7 @@ class CardViewModel(
 
     fun fetchCards() {
         launch {
-            val cardList = cardRepository.getCards()
+            val cardList = cardRepository.getCards(0)
             _cards.postValue(cardList.cards)
         }
     }

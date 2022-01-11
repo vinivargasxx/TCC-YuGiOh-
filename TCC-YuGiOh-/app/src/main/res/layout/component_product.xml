@@ -22,10 +22,10 @@
         android:id="@+id/tv_product_subtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/tv_product_title"
+        app:layout_constraintTop_toTopOf="parent"
         tools:text="@string/txt_cards_subtitle" />
 
     <androidx.appcompat.widget.AppCompatImageView

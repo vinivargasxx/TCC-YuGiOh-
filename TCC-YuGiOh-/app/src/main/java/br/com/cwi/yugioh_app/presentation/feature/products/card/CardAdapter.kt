@@ -16,6 +16,7 @@ class CardAdapter(
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
             val view = inflateView(R.layout.item_card, parent)
             return CardViewHolder(view, onDeckClick, onCardClick)
+
     }
 
     override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
@@ -24,8 +25,6 @@ class CardAdapter(
     }
 
     override fun getItemCount() = list.size
-
-    override fun getItemViewType(position: Int) = list[position].id
 
     private fun inflateView(layout: Int, parent: ViewGroup) = LayoutInflater.from(parent.context)
         .inflate(layout, parent, false)

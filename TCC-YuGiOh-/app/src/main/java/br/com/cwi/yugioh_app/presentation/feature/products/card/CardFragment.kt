@@ -34,12 +34,16 @@ class CardFragment : Fragment() {
 
     private fun setupViewModel() {
         viewModel.cards.observe(viewLifecycleOwner) { list ->
-            setUpCoffeeRecyclerView(list)
+            println(list.size)
+            setUpCardRecyclerView(list)
+
         }
         viewModel.fetchCards()
     }
 
-    private fun setUpCoffeeRecyclerView(list: List<Card>) {
+
+
+    private fun setUpCardRecyclerView(list: List<Card>) {
         binding.rvCards.apply {
             addItemDecoration(
                 DividerItemDecoration(context, DividerItemDecoration.VERTICAL)
@@ -47,12 +51,12 @@ class CardFragment : Fragment() {
             adapter = CardAdapter(list, onDeckClick = {
                 viewModel.setDeck(it)
             }, onCardClick = {
-                navigateToCoffeeDetail(it.id)
+                navigateToCardDetail(it.id)
             })
         }
     }
 
-    private fun navigateToCoffeeDetail(id: Int) {
+    private fun navigateToCardDetail(id: Int) {
         findNavController().navigate(
             R.id.cardDetailFragment,
             bundleOf(
