@@ -13,12 +13,14 @@ class CardViewModel(
     private val cardLocalRepository: CardLocalRepository
 ) : BaseViewModel() {
 
+    private var nextPage = 0
+
     private val _cards = MutableLiveData<List<Card>>()
     val cards: LiveData<List<Card>> = _cards
 
     fun fetchCards() {
         launch {
-            val cardList = cardRepository.getCards(0)
+            val cardList = cardRepository.getCards(nextPage)
             _cards.postValue(cardList.cards)
         }
     }
@@ -34,5 +36,7 @@ class CardViewModel(
         if (card.isDeck) cardLocalRepository.add(cardEntity)
         else cardLocalRepository.remove(cardEntity)
     }
+
+
 
 }

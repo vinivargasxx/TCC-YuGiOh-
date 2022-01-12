@@ -9,5 +9,13 @@
 
     <string name="txt_error_title">Opss, algo deu errado</string>
     <string name="txt_error_subtitle">Tente novamente mais tarde</string>
+    <string name="detail_name">Name: </string>
+    <string name="detail_description">Description: </string>
+    <string name="detail_type">Type: </string>
+    <string name="detail_attack">Attack: </string>
+    <string name="detail_defense">Defense: </string>
+    <string name="detail_race">Race: </string>
+    <string name="detail_attribute">Attribute: </string>
+    <string name="detail_level">Level:</string>
 
 </resources>

@@ -15,15 +15,12 @@ class CardViewHolder(
 ) : RecyclerView.ViewHolder(itemView) {
     private val tvName = ItemCardBinding.bind(itemView).tvName
     private val tvType = ItemCardBinding.bind(itemView).tvType
-//    private val ivImage = ItemCardBinding.bind(itemView).ivImage
     private val ivSmallImage = ItemCardBinding.bind(itemView).ivSmallImage
-//    private val tvDescription = ItemCardBinding.bind(itemView).tvDescription
     private val ivDeck = ItemCardBinding.bind(itemView).ivDeck
  
     fun bind(item: Card) {
         tvName.text = item.name
         tvType.text = item.type
-//        tvDescription.text = item.description
 
         with(ivDeck) {
             setImageDrawable(getFavoriteIcon(item))
@@ -33,10 +30,6 @@ class CardViewHolder(
                 onDeckClick(item)
             }
         }
-
-//        Glide.with(itemView.context)
-//            .load(item.cardImage)
-//            .into(ivImage)
 
         Glide.with(itemView.context)
             .load(item.cardSmallImage)

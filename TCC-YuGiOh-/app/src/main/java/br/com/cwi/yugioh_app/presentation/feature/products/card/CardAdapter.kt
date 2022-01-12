@@ -16,7 +16,6 @@ class CardAdapter(
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
             val view = inflateView(R.layout.item_card, parent)
             return CardViewHolder(view, onDeckClick, onCardClick)
-
     }
 
     override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
@@ -28,4 +27,5 @@ class CardAdapter(
 
     private fun inflateView(layout: Int, parent: ViewGroup) = LayoutInflater.from(parent.context)
         .inflate(layout, parent, false)
+
 }

@@ -4,7 +4,7 @@ import br.com.cwi.yugioh_app.data.network.entity.DataResponse
 import retrofit2.http.GET
 import retrofit2.http.Query
 
-const val ITENS_PAGINA = 6
+const val ITENS_PAGINA = 500000
 
 interface YugiohApi {
 

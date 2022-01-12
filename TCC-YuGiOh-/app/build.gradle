@@ -8,7 +8,7 @@ android {
     compileSdk 31
 
     defaultConfig {
-        applicationId "br.com.cwi.nespresso_app"
+        applicationId "br.com.cwi.yugioh_app"
         minSdk 23
         targetSdk 31
         versionCode 1
@@ -95,5 +95,6 @@ dependencies {
 
     //Coroutines Test
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:$coroutine_version")
+
 
 }
