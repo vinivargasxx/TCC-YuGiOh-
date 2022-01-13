@@ -89,7 +89,7 @@ class CardFragment : Fragment() {
                 Pair(EXTRA_CARD_ATTACK, attack),
                 Pair(EXTRA_CARD_DEFENSE, defense),
                 Pair(EXTRA_CARD_LEVEL, level),
-                Pair(EXTRA_CARD_DESCRIPTION, description),
+                Pair(EXTRA_CARD_DESCRIPTION, description)
             )
         )
     }

@@ -37,14 +37,13 @@ class CardHostActivity : BaseBottomNavigation() {
         setupViewModel()
         setupNavController()
 
-
     }
 
     private fun setupNavController() {
         navController.addOnDestinationChangedListener { _, destination, _ ->
             val title = when (destination.id) {
                 R.id.cardFragment -> getString(R.string.txt_cards_title)
-                else -> "Detalhes"
+                else -> "Details"
             }
             supportActionBar?.title = title
         }

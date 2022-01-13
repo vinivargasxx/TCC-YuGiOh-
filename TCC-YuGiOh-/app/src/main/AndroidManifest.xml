@@ -15,7 +15,7 @@
         android:theme="@style/Theme.Yugiohapp"
         android:usesCleartextTraffic="true">
         <activity
-            android:name="br.com.cwi.yugioh_app.presentation.feature.favorites.DeckActivity"
+            android:name="br.com.cwi.yugioh_app.presentation.feature.deck.DeckActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity

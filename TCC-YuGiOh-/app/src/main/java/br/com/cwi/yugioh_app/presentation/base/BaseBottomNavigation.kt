@@ -3,7 +3,7 @@ package br.com.cwi.yugioh_app.presentation.base
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import br.com.cwi.yugioh_app.R
-import br.com.cwi.yugioh_app.presentation.feature.favorites.DeckActivity
+import br.com.cwi.yugioh_app.presentation.feature.deck.DeckActivity
 import br.com.cwi.yugioh_app.presentation.feature.products.ProductsActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 

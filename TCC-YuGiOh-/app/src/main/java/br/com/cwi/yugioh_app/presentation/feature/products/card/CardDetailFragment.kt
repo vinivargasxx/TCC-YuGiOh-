@@ -1,15 +1,15 @@
 package br.com.cwi.yugioh_app.presentation.feature.products.card
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import br.com.cwi.yugioh_app.databinding.FragmentCardDetailBinding
-import br.com.cwi.yugioh_app.databinding.ItemCardBinding
 import com.bumptech.glide.Glide
 
 const val EXTRA_CARD_ID = "EXTRA_CARD_ID"
+const val EXTRA_CARD = "EXTRA_CARD"
 const val EXTRA_CARD_IMAGE = "EXTRA_CARD_IMAGE"
 const val EXTRA_CARD_NAME = "EXTRA_CARD_NAME"
 const val EXTRA_CARD_TYPE = "EXTRA_CARD_TYPE"
@@ -53,7 +53,6 @@ class CardDetailFragment : Fragment() {
     private val cardLevel by lazy {
         arguments?.getInt(EXTRA_CARD_LEVEL)
     }
-
     private val cardDescription by lazy {
         arguments?.getString(EXTRA_CARD_DESCRIPTION)
     }

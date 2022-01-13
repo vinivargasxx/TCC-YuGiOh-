@@ -133,6 +133,7 @@
                 android:id="@+id/tv_card_attribute"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:defaultValue="Not contain"
                 tools:text="Spell Card" />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
