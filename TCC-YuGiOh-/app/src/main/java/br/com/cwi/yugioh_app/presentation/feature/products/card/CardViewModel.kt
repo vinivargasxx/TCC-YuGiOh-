@@ -21,7 +21,15 @@ class CardViewModel(
     fun fetchCards() {
         launch {
             val cardList = cardRepository.getCards(nextPage)
+            cardIsDeck(cardList.cards)
             _cards.postValue(cardList.cards)
+        }
+    }
+
+    private fun cardIsDeck(cardList: List<Card>) {
+        val deckList = cardLocalRepository.getAll()
+        deckList?.takeIf { it.isNotEmpty() }?.let { deckList ->
+            setIsCardDeck(deckList.map { it.id }, cardList.map { it })
         }
     }
 

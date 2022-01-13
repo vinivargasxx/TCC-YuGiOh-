@@ -8,6 +8,6 @@
     <item
         android:id="@+id/deck_menu"
         android:enabled="true"
-        android:icon="@drawable/ic_favorite"
+        android:icon="@drawable/ic_deck"
         android:title="@string/txt_deck"/>
 </menu>

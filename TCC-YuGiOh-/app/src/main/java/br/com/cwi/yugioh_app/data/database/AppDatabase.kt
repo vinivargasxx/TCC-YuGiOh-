@@ -7,7 +7,9 @@ import androidx.room.RoomDatabase
 import br.com.cwi.yugioh_app.data.database.dao.CardDao
 import br.com.cwi.yugioh_app.data.database.entity.CardEntity
 
-@Database(entities = [CardEntity::class], version = 1)
+const val DATABASE_VERSION = 2
+
+@Database(entities = [CardEntity::class], version = DATABASE_VERSION)
 abstract class AppDatabase : RoomDatabase() {
 
     abstract fun getCardDao(): CardDao

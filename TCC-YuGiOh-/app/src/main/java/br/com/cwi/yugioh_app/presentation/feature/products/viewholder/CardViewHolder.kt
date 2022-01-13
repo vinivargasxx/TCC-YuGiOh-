@@ -42,7 +42,7 @@ class CardViewHolder(
 
     private fun getFavoriteIcon(card: Card) = ContextCompat.getDrawable(
         itemView.context,
-        if (card.isDeck) R.drawable.ic_favorite_filled
-        else R.drawable.ic_favorite_rounded
+        if (card.isDeck) R.drawable.ic_deck_filled
+        else R.drawable.ic_deck_rounded
     )
 }

@@ -10,6 +10,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 class DeckActivity : BaseBottomNavigation() {
 
 
+
     private lateinit var binding: ActivityDeckBinding
 
     override val currentTab: Int = R.id.deck_menu
@@ -22,5 +23,6 @@ class DeckActivity : BaseBottomNavigation() {
     }
 
     override fun getBottomNavigation(): BottomNavigationView = binding.contentBottomNavigation.root
+
 
 }
