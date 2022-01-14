@@ -2,6 +2,8 @@ package br.com.cwi.yugioh_app.presentation.feature.products.card
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.Filter
+import android.widget.Filterable
 import androidx.recyclerview.widget.RecyclerView.*
 import br.com.cwi.yugioh_app.R
 import br.com.cwi.yugioh_app.domain.entity.Card
@@ -27,5 +29,10 @@ class CardAdapter(
 
     private fun inflateView(layout: Int, parent: ViewGroup) = LayoutInflater.from(parent.context)
         .inflate(layout, parent, false)
+
+
+
+
+
 
 }

@@ -27,15 +27,11 @@ class CardViewModel(
     }
 
     private fun cardIsDeck(cardList: List<Card>) {
-        val deckList = cardLocalRepository.getAll()
-        deckList?.takeIf { it.isNotEmpty() }?.let { deckList ->
-            setIsCardDeck(deckList.map { it.id }, cardList.map { it })
-        }
-    }
-
-    private fun setIsCardDeck(deckIdList: List<Int>, cardList: List<Card>) {
-        deckIdList.forEach { id ->
-            cardList.forEach { it.isDeck = it.id == id }
+        val deckList = cardLocalRepository.getAll()?.map { it.id }?.toHashSet()
+        cardList.forEach{ card ->
+            if (deckList != null) {
+                card.isDeck = deckList.contains(card.id)
+            }
         }
     }
 

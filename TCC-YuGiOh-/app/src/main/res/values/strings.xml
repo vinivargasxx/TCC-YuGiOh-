@@ -2,13 +2,13 @@
     <string name="app_name">YuGiOh! APP</string>
 
     <string name="txt_cards_title">Cards</string>
-    <string name="txt_cards_subtitle">Selecione suas cartas \n e monte um deck!</string>
+    <string name="txt_cards_subtitle">Select your cards!</string>
 
-    <string name="txt_inicio">Início</string>
-    <string name="txt_deck">Deck</string>
+    <string name="txt_inicio">Menu</string>
+    <string name="txt_deck">Your deck</string>
 
-    <string name="txt_error_title">Opss, algo deu errado</string>
-    <string name="txt_error_subtitle">Tente novamente mais tarde</string>
+    <string name="txt_error_title">Oops, something went wrong</string>
+    <string name="txt_error_subtitle">Try again later</string>
     <string name="detail_name">Name: </string>
     <string name="detail_description">Description: </string>
     <string name="detail_type">Type: </string>
@@ -17,5 +17,6 @@
     <string name="detail_race">Race: </string>
     <string name="detail_attribute">Attribute: </string>
     <string name="detail_level">Level:</string>
+    <string name="txt_deck_title">Deck</string>
 
 </resources>

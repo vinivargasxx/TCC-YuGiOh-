@@ -34,7 +34,6 @@ class CardFragment : Fragment() {
 
     private fun setupViewModel() {
         viewModel.cards.observe(viewLifecycleOwner) { list ->
-            println(list.size)
             setUpCardRecyclerView(list)
 
         }

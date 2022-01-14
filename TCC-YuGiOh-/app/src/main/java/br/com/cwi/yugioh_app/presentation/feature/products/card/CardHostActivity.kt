@@ -36,7 +36,6 @@ class CardHostActivity : BaseBottomNavigation() {
 
         setupViewModel()
         setupNavController()
-
     }
 
     private fun setupNavController() {

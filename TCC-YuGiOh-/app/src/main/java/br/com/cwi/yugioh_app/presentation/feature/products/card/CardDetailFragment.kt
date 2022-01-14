@@ -9,7 +9,6 @@ import br.com.cwi.yugioh_app.databinding.FragmentCardDetailBinding
 import com.bumptech.glide.Glide
 
 const val EXTRA_CARD_ID = "EXTRA_CARD_ID"
-const val EXTRA_CARD = "EXTRA_CARD"
 const val EXTRA_CARD_IMAGE = "EXTRA_CARD_IMAGE"
 const val EXTRA_CARD_NAME = "EXTRA_CARD_NAME"
 const val EXTRA_CARD_TYPE = "EXTRA_CARD_TYPE"
@@ -20,7 +19,6 @@ const val EXTRA_CARD_DEFENSE = "EXTRA_CARD_DEFENSE"
 const val EXTRA_CARD_LEVEL = "EXTRA_CARD_LEVEL"
 const val EXTRA_CARD_DESCRIPTION = "EXTRA_CARD_DESCRIPTION"
 
-
 class CardDetailFragment : Fragment() {
 
     private lateinit var binding: FragmentCardDetailBinding
@@ -28,7 +26,6 @@ class CardDetailFragment : Fragment() {
     private val cardId by lazy {
         arguments?.getInt(EXTRA_CARD_ID)
     }
-
     private val cardImage by lazy {
         arguments?.getString(EXTRA_CARD_IMAGE)
     }
