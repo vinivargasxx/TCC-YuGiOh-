@@ -58,8 +58,5 @@ class CardHostActivity : BaseBottomNavigation() {
         }
     }
 
-    override fun onSupportNavigateUp(): Boolean {
-        onBackPressed()
-        return true
-    }
+    
 }

@@ -7,6 +7,7 @@ import br.com.cwi.yugioh_app.R
 import br.com.cwi.yugioh_app.data.database.entity.CardEntity
 import br.com.cwi.yugioh_app.databinding.ActivityDeckBinding
 
+
 import br.com.cwi.yugioh_app.presentation.base.BaseBottomNavigation
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
@@ -30,6 +31,7 @@ class DeckActivity: BaseBottomNavigation() {
         super.onCreate(savedInstanceState)
         binding = ActivityDeckBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         setupViewModel()
     }
@@ -52,12 +54,10 @@ class DeckActivity: BaseBottomNavigation() {
 
     private fun setUpDeckRecyclerView(list: List<CardEntity>) {
         binding.rvDeck.apply {
-            addItemDecoration(
-                DividerItemDecoration(this@DeckActivity, DividerItemDecoration.VERTICAL)
-            )
             adapter = DeckAdapter(list)
             layoutManager = GridLayoutManager(context, 3)
         }
     }
+
 
 }

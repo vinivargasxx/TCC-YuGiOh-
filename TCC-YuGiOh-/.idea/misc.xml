@@ -30,6 +30,7 @@
         <entry key="..\:/Users/vinic/OneDrive/Documentos/CWI Estudos/TCC Android/TCC-YuGiOh-/app/src/main/res/drawable/ic_launcher_background.xml" value="0.12129629629629629" />
         <entry key="..\:/Users/vinic/OneDrive/Documentos/CWI Estudos/TCC Android/TCC-YuGiOh-/app/src/main/res/drawable/ic_launcher_yugioh_background.xml" value="0.12129629629629629" />
         <entry key="..\:/Users/vinic/OneDrive/Documentos/CWI Estudos/TCC Android/TCC-YuGiOh-/app/src/main/res/drawable/ic_products.xml" value="0.2203125" />
+        <entry key="..\:/Users/vinic/OneDrive/Documentos/CWI Estudos/TCC Android/TCC-YuGiOh-/app/src/main/res/drawable/tab_color.xml" value="0.2169230769230769" />
         <entry key="..\:/Users/vinic/OneDrive/Documentos/CWI Estudos/TCC Android/TCC-YuGiOh-/app/src/main/res/layout/activity_card_host.xml" value="0.17760416666666667" />
         <entry key="..\:/Users/vinic/OneDrive/Documentos/CWI Estudos/TCC Android/TCC-YuGiOh-/app/src/main/res/layout/activity_deck.xml" value="0.12" />
         <entry key="..\:/Users/vinic/OneDrive/Documentos/CWI Estudos/TCC Android/TCC-YuGiOh-/app/src/main/res/layout/activity_favorites.xml" value="0.17760416666666667" />
@@ -37,12 +38,14 @@
         <entry key="..\:/Users/vinic/OneDrive/Documentos/CWI Estudos/TCC Android/TCC-YuGiOh-/app/src/main/res/layout/component_product.xml" value="0.16" />
         <entry key="..\:/Users/vinic/OneDrive/Documentos/CWI Estudos/TCC Android/TCC-YuGiOh-/app/src/main/res/layout/fragment_card.xml" value="0.17760416666666667" />
         <entry key="..\:/Users/vinic/OneDrive/Documentos/CWI Estudos/TCC Android/TCC-YuGiOh-/app/src/main/res/layout/fragment_card_detail.xml" value="0.25" />
-        <entry key="..\:/Users/vinic/OneDrive/Documentos/CWI Estudos/TCC Android/TCC-YuGiOh-/app/src/main/res/layout/item_card.xml" value="0.17760416666666667" />
+        <entry key="..\:/Users/vinic/OneDrive/Documentos/CWI Estudos/TCC Android/TCC-YuGiOh-/app/src/main/res/layout/item_card.xml" value="0.25" />
         <entry key="..\:/Users/vinic/OneDrive/Documentos/CWI Estudos/TCC Android/TCC-YuGiOh-/app/src/main/res/layout/item_card_deck.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/vinic/OneDrive/Documentos/CWI Estudos/TCC Android/TCC-YuGiOh-/app/src/main/res/layout/view_bottom_navigation.xml" value="0.16" />
         <entry key="..\:/Users/vinic/OneDrive/Documentos/CWI Estudos/TCC Android/TCC-YuGiOh-/app/src/main/res/layout/view_error.xml" value="0.16" />
         <entry key="..\:/Users/vinic/OneDrive/Documentos/CWI Estudos/TCC Android/TCC-YuGiOh-/app/src/main/res/layout/view_loading.xml" value="0.18854166666666666" />
+        <entry key="..\:/Users/vinic/OneDrive/Documentos/CWI Estudos/TCC Android/TCC-YuGiOh-/app/src/main/res/menu/menu.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/vinic/OneDrive/Documentos/CWI Estudos/TCC Android/TCC-YuGiOh-/app/src/main/res/menu/menu_bottom_navigation.xml" value="0.2" />
+        <entry key="..\:/Users/vinic/OneDrive/Documentos/CWI Estudos/TCC Android/TCC-YuGiOh-/app/src/main/res/menu/meu.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/vinic/OneDrive/Documentos/CWI Estudos/TCC Android/TCC-YuGiOh-/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.12129629629629629" />
         <entry key="..\:/Users/vinic/OneDrive/Documentos/CWI Estudos/TCC Android/TCC-YuGiOh-/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.12129629629629629" />
         <entry key="..\:/Users/vinic/OneDrive/Documentos/CWI Estudos/TCC Android/TCC-YuGiOh-/app/src/main/res/mipmap-anydpi-v26/ic_launcher_yugioh.xml" value="0.12129629629629629" />

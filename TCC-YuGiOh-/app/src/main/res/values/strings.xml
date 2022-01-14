@@ -18,5 +18,6 @@
     <string name="detail_attribute">Attribute: </string>
     <string name="detail_level">Level:</string>
     <string name="txt_deck_title">Deck</string>
+    <string name="txt_search">Search</string>
 
 </resources>

@@ -7,6 +7,8 @@ import br.com.cwi.yugioh_app.domain.entity.Card
 import br.com.cwi.yugioh_app.domain.repository.CardLocalRepository
 import br.com.cwi.yugioh_app.domain.repository.CardRepository
 import br.com.cwi.yugioh_app.presentation.base.BaseViewModel
+import org.koin.androidx.viewmodel.compat.SharedViewModelCompat.sharedViewModel
+import org.koin.androidx.viewmodel.ext.android.sharedViewModel
 
 class CardViewModel(
     private val cardRepository: CardRepository,

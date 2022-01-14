@@ -44,4 +44,9 @@ abstract class BaseBottomNavigation : AppCompatActivity() {
     private fun selectCurrentTab() {
         getBottomNavigation().selectedItemId = currentTab
     }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
+    }
 }

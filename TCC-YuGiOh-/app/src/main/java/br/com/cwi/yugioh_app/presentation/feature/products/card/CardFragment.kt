@@ -43,9 +43,7 @@ class CardFragment : Fragment() {
 
     private fun setUpCardRecyclerView(list: List<Card>) {
         binding.rvCards.apply {
-            addItemDecoration(
-                DividerItemDecoration(context, DividerItemDecoration.VERTICAL)
-            )
+
             adapter = CardAdapter(list, onDeckClick = {
                 viewModel.setDeck(it)
             }, onCardClick = {
