@@ -4,7 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import br.com.cwi.yugioh_app.R
 import br.com.cwi.yugioh_app.presentation.feature.deck.DeckActivity
-import br.com.cwi.yugioh_app.presentation.feature.products.ProductsActivity
+import br.com.cwi.yugioh_app.presentation.feature.products.MainActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 abstract class BaseBottomNavigation : AppCompatActivity() {
@@ -29,7 +29,7 @@ abstract class BaseBottomNavigation : AppCompatActivity() {
         getBottomNavigation().setOnItemSelectedListener {
             if (it.itemId != this.currentTab) when (it.itemId) {
                 R.id.products_menu -> {
-                    val intent = Intent(this, ProductsActivity::class.java)
+                    val intent = Intent(this, MainActivity::class.java)
                     startActivity(intent)
                 }
                 R.id.deck_menu -> {

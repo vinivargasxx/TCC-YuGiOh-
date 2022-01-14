@@ -8,7 +8,7 @@ import androidx.core.content.ContextCompat
 import br.com.cwi.yugioh_app.R
 import br.com.cwi.yugioh_app.databinding.ComponentProductBinding
 
-class ProductComponent : ConstraintLayout {
+class MainComponent : ConstraintLayout {
 
     private var binding: ComponentProductBinding =
         ComponentProductBinding.inflate(LayoutInflater.from(context), this)
@@ -26,7 +26,7 @@ class ProductComponent : ConstraintLayout {
                 subtitle = getString(
                     R.styleable.ProductComponent_component_product_subtitle
                 )
-                ivProductImage.setImageDrawable(
+                ivMainImage.setImageDrawable(
                     getDrawable(
                         R.styleable.ProductComponent_component_product_image
                     )
@@ -45,12 +45,12 @@ class ProductComponent : ConstraintLayout {
     var subtitle:String? = null
         set(value) {
             field = value
-            binding.tvProductSubtitle.text = value
+            binding.tvMainSubtitle.text = value
         }
 
     var title: String? = null
         set(value) {
             field = value
-            binding.tvProductTitle.text = value
+            binding.tvMainTitle.text = value
         }
 }

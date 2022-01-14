@@ -9,7 +9,7 @@ import br.com.cwi.yugioh_app.domain.entity.Card
 import br.com.cwi.yugioh_app.presentation.feature.products.viewholder.CardViewHolder
 
 class CardAdapter(
-    private val list: List<Card>,
+    private var list: List<Card>,
     private val onDeckClick: (Card) -> Unit,
     private val onCardClick: (Card) -> Unit
 ) : Adapter<ViewHolder>() {
@@ -23,6 +23,7 @@ class CardAdapter(
         val item = list[position]
         (viewHolder as CardViewHolder).bind(item)
     }
+
 
     override fun getItemCount() = list.size
 

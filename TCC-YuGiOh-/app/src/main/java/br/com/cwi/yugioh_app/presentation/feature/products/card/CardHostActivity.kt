@@ -1,6 +1,8 @@
 package br.com.cwi.yugioh_app.presentation.feature.products.card
 
 import android.os.Bundle
+import android.view.Menu
+import androidx.appcompat.widget.SearchView
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
 import br.com.cwi.yugioh_app.R
@@ -13,7 +15,7 @@ private const val VIEW_CONTENT = 0
 private const val VIEW_LOADING = 1
 private const val VIEW_ERROR = 2
 
-class CardHostActivity : BaseBottomNavigation() {
+class CardHostActivity : BaseBottomNavigation(){
 
     private val viewModel: CardViewModel by viewModel()
 
@@ -58,5 +60,5 @@ class CardHostActivity : BaseBottomNavigation() {
         }
     }
 
-    
+
 }

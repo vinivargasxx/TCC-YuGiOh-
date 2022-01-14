@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".presentation.feature.products.ProductsActivity">
+    tools:context=".presentation.feature.products.MainActivity">
 
-    <br.com.cwi.yugioh_app.presentation.component.ProductComponent
+    <br.com.cwi.yugioh_app.presentation.component.MainComponent
         android:id="@+id/content_cards"
         android:layout_width="match_parent"
         android:layout_height="0dp"
